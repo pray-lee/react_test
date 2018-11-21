@@ -6,11 +6,13 @@ class Demo extends Component {
     this.state = {
       son: 'liyuhong',
     }
+    this.getData = this.getData.bind(this)
+    this.setData = this.setData.bind(this)
   }
-  getData = () => {
+  getData () {
     console.log('get', this.state.son)
   }
-  setData = data => {
+  setData () {
     console.log('set')
     this.setState({
       son: Math.random()
